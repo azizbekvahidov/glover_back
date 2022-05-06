@@ -24,7 +24,7 @@ class VehicleTypeController extends Controller
     {
 
         //
-        $vehicleTypes = VehicleType::active()->inorder()->get();
+        $vehicleTypes = VehicleType::active()->get();
 
         //check if multiple currency is enabled
         $multipleCurrency = (bool) setting('taxi.multipleCurrency', false);
